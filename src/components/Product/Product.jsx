@@ -1,6 +1,5 @@
 import "./product.css";
 
-let di = require('../../image/apple.png');
 const Product = ({img,link}) => {
   return (
     <div className="p">

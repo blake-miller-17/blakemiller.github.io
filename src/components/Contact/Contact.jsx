@@ -1,6 +1,4 @@
 import './contact.css'
-import Email from '../../image/pic03.jpg'
-import Address from '../../image/pic04.jpg'
 import { useRef } from 'react'
 import emailjs from 'emailjs-com'
 import React, { useContext, useState } from "react"
