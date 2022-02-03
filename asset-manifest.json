@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/me/static/css/main.fa5fd7f7.css",
-    "main.js": "/me/static/js/main.00e75492.js",
-    "static/media/apple.png": "/me/static/media/apple.4a63a2bad9fbe28f2e42.png",
-    "static/media/pic08.jpg": "/me/static/media/pic08.8e0cff31a78659510ad8.jpg",
+    "main.css": "/me/static/css/main.5c6aef7c.css",
+    "main.js": "/me/static/js/main.d6c1fae7.js",
+    "static/media/myweb.png": "/me/static/media/myweb.d36930d28fb4e1badd6e.png",
+    "static/media/shmup.png": "/me/static/media/shmup.d320fcc9208428aae2b4.png",
+    "static/media/vw.png": "/me/static/media/vw.b6fdc6ee2ab9a351d1d1.png",
+    "static/media/BlakeSD.jpeg": "/me/static/media/BlakeSD.46ac853d13643554c6a2.jpeg",
+    "static/media/BlakeIce.jpeg": "/me/static/media/BlakeIce.f9feb7ffd3b2cb6fb64d.jpeg",
+    "static/media/projectSorry.png": "/me/static/media/projectSorry.d1ff3d777ecd25d454a9.png",
+    "static/media/final.png": "/me/static/media/final.42e26bfe64a9f8c42ffd.png",
     "static/media/moon.png": "/me/static/media/moon.880bb3aa27f24b5d8368.png",
     "static/media/sun.png": "/me/static/media/sun.ff61f97e3f3e69e34663.png",
-    "static/media/pic04.jpg": "/me/static/media/pic04.9aec241970f7975ff6aa.jpg",
-    "static/media/pic07.jpg": "/me/static/media/pic07.20a98bc8d8413bf85c29.jpg",
-    "static/media/pic02.jpg": "/me/static/media/pic02.051ce0177fab1f36ce9a.jpg",
-    "static/media/pic03.jpg": "/me/static/media/pic03.884b90c5f480e0007832.jpg",
     "index.html": "/me/index.html",
-    "main.fa5fd7f7.css.map": "/me/static/css/main.fa5fd7f7.css.map",
-    "main.00e75492.js.map": "/me/static/js/main.00e75492.js.map"
+    "main.5c6aef7c.css.map": "/me/static/css/main.5c6aef7c.css.map",
+    "main.d6c1fae7.js.map": "/me/static/js/main.d6c1fae7.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa5fd7f7.css",
-    "static/js/main.00e75492.js"
+    "static/css/main.5c6aef7c.css",
+    "static/js/main.d6c1fae7.js"
   ]
 }
