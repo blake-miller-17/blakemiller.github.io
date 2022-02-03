@@ -18,7 +18,8 @@
 
 .intro-left-wrapper {
     padding: 25px;
-    display: flex;
+    display: inline-block; 
+    height: 50%;
     flex-direction: column;
     justify-content: space-around;
 }
@@ -32,6 +33,10 @@
 .intro-name {
     margin: 0;
     font-size: 60px;
+}
+
+.intro-description {
+    font-size: 17px;
 }
 
 .intro-title {
@@ -61,7 +66,7 @@
 
 .intro-bg {
     clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-    background-color: rgba(50, 205, 146, 0.616);;
+    background-color: rgb(50, 205, 146);;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -89,6 +94,24 @@
     font-size: 30px;
     font-weight: bold;
     display: flex;
-    color:rgba(50, 205, 146, 0.616);
+    color:#078282FF;
     align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro-left-wrapper {
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .intro-description {
+        display: none;
+    }
 }

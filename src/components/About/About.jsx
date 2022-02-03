@@ -1,8 +1,7 @@
 // src/components/About.js
 import React from 'react';
 import './About.css'
-import ph from '../../image/pic03.jpg'
-import award from '../../image/pic07.jpg'
+import hockey from '../../image/BlakeIce.jpeg'
 
 const About = () => {
     return (
@@ -10,20 +9,24 @@ const About = () => {
             <div className="about-left">
                 <div className="about-card bg"></div>
                 <div className="about-card">
-                    <img src={ph} alt="" className="about-img" />
+                    <img src={hockey} alt="" className="about-img" />
                 </div>
             </div>
             <div className="about-right">
                 <h1 className="about-title">About Me</h1>
                 <p className="about-sub">
-                    It is a long established fact that a reader will be able to not see
-                    all readable content.
+                   A computer science major graduating in May of 2022.
                 </p>
                 <p className="about-descr">
-                    This is a very long sentence but also its just copy pasted. This is a very long sentence but also its just copy pasted.
-                    This is a very long sentence but also its just copy pasted. This is a very long sentence but also its just copy pasted.
-                    This is a very long sentence but also its just copy pasted.
+                   I split my schooling into two parts, spending the first half of it at the
+                   University of California - Santa Cruz and the latter part at Michigan State University. 
+                   A mix of computer science and game developement currriculum have made me want to pursue
+                   a career in such fields.
                 </p>
+            </div>
+        </div>
+                /* This is the place to show off an award
+                ...if I had one 
                 <div className="about-award">
                     <img src={award} alt="" className='about-award-img'/>
                     <div className="about-award-texts">
@@ -33,8 +36,7 @@ const About = () => {
                         </p>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> */
     )
 }
 

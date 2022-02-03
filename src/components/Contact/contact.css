@@ -6,8 +6,15 @@
 .contact-bg {
     width: 20px;
     height: 100%;
-    background-color: turquoise;
+    background-color: cadetblue;
     position: absolute;
+}
+
+.contact-text {
+    padding-top: 40px;
+    align-items: center;
+    justify-content: left;
+    display: flex;
 }
 
 .contact-wrapper {
@@ -79,4 +86,41 @@ button {
     color: white;
     font-weight: 500;
     cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .contact-wrapper {
+        flex-direction: column;
+        padding: 0px 50px;
+    }
+
+    .contact-title {
+        font-size: 30px;
+    }
+
+    .contact-info-item {
+        margin: 20px 0px;
+        width: 100%;
+    }
+
+    .contact-description {
+        display: none;
+    }
+
+    form {
+        margin-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    input {
+        width: 35%;
+        height: 40px;
+        margin: 10px;
+        margin-left: 0px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
 }

@@ -9,6 +9,7 @@ import Contact from './components/Contact/Contact.jsx'
 import Toggle from './components/Toggle/Toggle.jsx';
 import { ThemeContext } from './context.js';
 
+
 const App = () => {
   const theme = useContext(ThemeContext)
   const darkMode = theme.state.darkMode;

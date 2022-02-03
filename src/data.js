@@ -1,35 +1,35 @@
 
-const apple = require('./image/apple.png');
-const pic5 = require('./image/pic05.jpg');
-const pic6 = require('./image/pic06.jpg');
-const pic7 = require('./image/pic07.jpg');
-const pic8 = require('./image/pic08.jpg');
+const final = require('./image/final.png');
+const myweb = require('./image/myweb.png');
+const vw = require('./image/vw.png');
+const sorry = require('./image/projectSorry.png');
+const schmup = require('./image/shmup.png');
 
 export const products = [
     {
       id: "1",
-      img: apple,
-      link: "https://reactbootcamp.com",
+      img: vw,
+      link: "https://www.cse.msu.edu/~cse498/2021-08/projects/volkswagen/",
     },
     {
       id: "2",
-      img: pic5,
-      link: "https://reactbootcamp.com",
+      img: sorry,
+      link: "https://github.com/blake-miller-17/sorry",
     },
     {
       id: "3",
-      img: pic6,
-      link: "https://reactbootcamp.com",
+      img: final,
+      link: "https://github.com/blake-miller-17/MI231",
     },
     {
       id: "4",
-      img: pic7,
-      link: "https://reactbootcamp.com",
+      img: schmup,
+      link: "https://github.com/blake-miller-17/MI231",
     },
     {
       id: "5",
-      img: pic8,
-      link: "https://reactbootcamp.com",
+      img: myweb,
+      link: "https://github.com/blake-miller-17/me",
     },
   ];
 

@@ -1,14 +1,17 @@
 import './contact.css'
-import Phone from '../../image/pic02.jpg'
 import Email from '../../image/pic03.jpg'
 import Address from '../../image/pic04.jpg'
 import { useRef } from 'react'
 import emailjs from 'emailjs-com'
-import React, { useEffect, useState } from "react";
+import React, { useContext, useState } from "react"
+import { ThemeContext } from "../../context"
+import { FaCompass, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
     const formRef = useRef();
     const [done, setDone] = useState(false);
+    const theme = useContext(ThemeContext)
+    const darkMode = theme.state.darkMode;
 
     const handleSubmit = (e)=> {
         e.preventDefault();
@@ -29,30 +32,14 @@ const Contact = () => {
                 <div className="contact-left">
                     <h1 className="contact-title">Lets talk!</h1>
                     <div className="contact-info">
-                        <div className="contact-info-item">
-                            <img 
-                            src={Phone} 
-                            alt="" 
-                            className="contact-icon" 
-                            />
-                            +1 (970) 371-8393
-                        </div>
-                        <div className="contact-info-item">
-                        <img 
-                            src={Email} 
-                            alt="" 
-                            className="contact-icon" 
-                            />
+                        <div className="contact-text">
+                            <FaEnvelope style={{fontSize: '25px', paddingRight: '20px', paddingTop: '5px'}}/>
                             bgarrettm@gmail.com
-                        </div>
-                        <div className="contact-info-item">
-                        <img 
-                            src={Address}
-                            alt="" 
-                            className="contact-icon" 
-                            />
-                            1234 SUCKIT
-                        </div>
+                        </div>      
+                        <div className="contact-text">
+                            <FaCompass style={{fontSize: '25px', paddingRight: '20px'}}/>
+                            East Lansing, Michigan
+                        </div>                        
                     </div>
                 </div>
                 <div className="contact-right">
@@ -60,12 +47,12 @@ const Contact = () => {
                         <b>What's your story?</b> Get in touch, lets talk about it
                     </p>
                     <form ref={formRef} onSubmit={handleSubmit}>
-                        <input type="text" placeholder='Name' name="user_name" />
-                        <input type="text" placeholder='Subject' name="user_subject" />
-                        <input type="text" placeholder='Email' name="user_email" />                        
-                        <textarea rows="5" placeholder='Message' name='message'/>
+                        <input style={{backgroundColor: darkMode && "#333", color: darkMode && "white"}} type="text" placeholder='Name' name="user_name" />
+                        <input style={{backgroundColor: darkMode && "#333", color: darkMode && "white"}} type="text" placeholder='Subject' name="user_subject" />
+                        <input style={{backgroundColor: darkMode && "#333", color: darkMode && "white"}} type="text" placeholder='Email' name="user_email" />                        
+                        <textarea style={{backgroundColor: darkMode && "#333", color: darkMode && "white"}} rows="5" placeholder='Message' name='message'/>
                         <button>Submit</button>
-                        {done && "Thank you..."}
+                        {done && "Thanks for getting in contact, I'll get back to you shortly!"}
                     </form>
                 </div>
             </div>
