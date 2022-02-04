@@ -42,7 +42,7 @@ const Contact = () => {
                 </div>
                 <div className="contact-right">
                     <p className="contact-description">
-                        <b>What's your story?</b> Get in touch, lets talk about it
+                        <b>Interested in what you see?</b> Get in touch, lets talk about it
                     </p>
                     <form ref={formRef} onSubmit={handleSubmit}>
                         <input style={{backgroundColor: darkMode && "#333", color: darkMode && "white"}} type="text" placeholder='Name' name="user_name" />
